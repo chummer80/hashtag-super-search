@@ -1,19 +1,84 @@
 * {
-	/* outline: red 1px solid;  */
+	 /* outline: red 1px solid;    */
 }
 
 body {
 	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
 	width: 100%;
-	min-width: 80rem;
+	min-width: 50rem;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 header {
-	background-color: lightgrey;
-	background-size: auto 100%;
 	height: 5rem;
 	width: 100%;
 	border-bottom: 0.3em solid black;
+	
+	background: -webkit-radial-gradient(white, grey); /* Safari 5.1 to 6.0 */
+	background: -o-radial-gradient(white, grey); /* For Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(white, grey); /* For Firefox 3.6 to 15 */
+	background: radial-gradient(white, grey); /* Standard syntax (must be last) */
+}
+
+#logo_container {
+	width: 50rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logo {
+	width: 100%;
+}
+
+
+#search_ui {
+	margin: 1rem;
+	font-size: 1.3rem;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#hashtag_image {
+	height: 1.3rem;
+}
+
+#search_ui_label {
+	margin-right: 0.5rem;
+}
+
+#search_textbox {
+	margin-left: 0;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+#search_button {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.result {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	border: 2px grey solid;
+	border-radius: 2rem;
+	box-shadow: 10px 10px 5px grey;
+	padding: 1rem;
+}
+
+.twitter_div {
+	background-color: white;
+	min-height: 8rem;
+}
+
+#twitter_logo {
+	display: block;
+	height: 4rem;
+	margin-left: auto;
+	margin-right: auto;
 }

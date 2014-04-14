@@ -20,20 +20,19 @@ $(document).ready(function() {
 			// });
 	// });
 	
-	
 	$('#twitter_test').click(function() {
-		console.log("Getting Twitter credentials");
+		console.log("Getting Twitter bearer token");
 		$.ajax({
 			url: 'https://api.twitter.com/oauth2/token',
 			type: 'POST',
+			dataType: 'jsonp',
 			headers: {
 				Authorization: 'Basic ' + twitterCredentialBase64,
 				'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
 			},
 			data: {
 				grant_type: 'client_credentials'
-			},
-			datatype: 'json'
+			}
 		})
 			.done(function(data) {
 				console.log("Successfully got Twitter bearer token");
