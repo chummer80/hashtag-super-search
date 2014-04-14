@@ -21,13 +21,13 @@ header {
 	background: radial-gradient(white, grey); /* Standard syntax (must be last) */
 }
 
-#logo_container {
+#hss_logo_container {
 	width: 50rem;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#logo {
+#hss_logo {
 	width: 100%;
 }
 
@@ -69,14 +69,12 @@ header {
 	border-radius: 2rem;
 	box-shadow: 10px 10px 5px grey;
 	padding: 1rem;
-}
-
-.twitter_div {
-	background-color: white;
+	
+	background-color: yellow;
 	min-height: 8rem;
 }
 
-#twitter_logo {
+.social_media_logo_image {
 	display: block;
 	height: 4rem;
 	margin-left: auto;
